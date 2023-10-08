@@ -1,12 +1,12 @@
 name: merge-github-actions
-#this is just a comment to rerun the action
-on: [pull_request]
+#this is just a comment to rerun thgte action
+on: [ pull_request ]
 jobs:
   Test:
     runs-on: ${{matrix.os}}
     strategy:
     matrix:
-    os: [macos-latest, windows-latest, ubuntu-latest]
+    os: [ macos-latest, windows-latest, ubuntu-latest ]
     steps:
       - uses: actions/checkout@v2
       - run: python main.py
