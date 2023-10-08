@@ -1,4 +1,5 @@
 name: merge-github-actions
+#this is just a comment to rerun the action
 on: [pull_request]
 jobs:
   Test:
